@@ -1,0 +1,468 @@
+21/03/14 14:47:52 INFO org.sparkproject.jetty.util.log: Logging initialized @4686ms to org.sparkproject.jetty.util.log.Slf4jLog
+21/03/14 14:47:52 INFO org.sparkproject.jetty.server.Server: jetty-9.4.36.v20210114; built: 2021-01-14T16:44:28.689Z; git: 238ec6997c7806b055319a6d11f8ae7564adc0de; jvm 1.8.0_282-b08
+21/03/14 14:47:52 INFO org.sparkproject.jetty.server.Server: Started @4805ms
+21/03/14 14:47:52 INFO org.sparkproject.jetty.server.AbstractConnector: Started ServerConnector@529f0fb3{HTTP/1.1, (http/1.1)}{0.0.0.0:41939}
+21/03/14 14:47:53 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at lab-5-cluster-m/10.128.0.2:8032
+21/03/14 14:47:53 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at lab-5-cluster-m/10.128.0.2:10200
+21/03/14 14:47:54 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+21/03/14 14:47:54 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+21/03/14 14:47:55 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1615732794345_0003
+21/03/14 14:47:56 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at lab-5-cluster-m/10.128.0.2:8030
+21/03/14 14:48:05 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:05 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:06 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDGdOam4wUjBDMHhUVBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
++------------+-----------+------------+-----------+---------------+
+|sepal_length|sepal_width|petal_length|petal_width|          class|
++------------+-----------+------------+-----------+---------------+
+|         5.1|        2.5|         3.0|        1.1|Iris-versicolor|
+|         5.0|        2.0|         3.5|        1.0|Iris-versicolor|
+|         5.7|        2.6|         3.5|        1.0|Iris-versicolor|
+|         6.0|        2.2|         4.0|        1.0|Iris-versicolor|
+|         5.8|        2.6|         4.0|        1.2|Iris-versicolor|
+|         5.5|        2.3|         4.0|        1.3|Iris-versicolor|
+|         6.1|        2.8|         4.0|        1.3|Iris-versicolor|
+|         5.5|        2.5|         4.0|        1.3|Iris-versicolor|
+|         6.4|        3.2|         4.5|        1.5|Iris-versicolor|
+|         5.6|        3.0|         4.5|        1.5|Iris-versicolor|
+|         6.2|        2.2|         4.5|        1.5|Iris-versicolor|
+|         6.0|        2.9|         4.5|        1.5|Iris-versicolor|
+|         5.4|        3.0|         4.5|        1.5|Iris-versicolor|
+|         4.9|        2.5|         4.5|        1.7| Iris-virginica|
+|         6.0|        3.4|         4.5|        1.6|Iris-versicolor|
+|         5.7|        2.8|         4.5|        1.3|Iris-versicolor|
+|         5.7|        2.5|         5.0|        2.0| Iris-virginica|
+|         6.0|        2.2|         5.0|        1.5| Iris-virginica|
+|         6.7|        3.0|         5.0|        1.7|Iris-versicolor|
+|         6.3|        2.5|         5.0|        1.9| Iris-virginica|
++------------+-----------+------------+-----------+---------------+
+only showing top 20 rows
+
+21/03/14 14:48:14 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[class], filters=[]
+21/03/14 14:48:14 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[class], filter=''
+21/03/14 14:48:14 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDFRoYVFIN1E3cFZyShoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:26 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:26 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:26 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDG1RQzRXaDJndEpudhoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:27 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:27 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:27 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHJkWThBSDRLUnhBWBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:35 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:35 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:35 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDGZXMFJFSVppS1AyUhoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Random Forest Model
+21/03/14 14:48:36 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:36 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:36 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDDFoRmNNd3JKcng2NhoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Training accuracy =  0.9921259842519685
+21/03/14 14:48:38 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:38 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:38 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEhYdUJaRVdObVZmZRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Test accuracy =  1.0
+21/03/14 14:48:39 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:39 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:39 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHdXTUxjc0pKQkw2TxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:40 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:40 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:41 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHZNTktvY1V2MXBwXxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:41 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:41 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:41 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDFY4cmNfWGFnMHY3UBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:44 WARN com.github.fommil.netlib.BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/03/14 14:48:44 WARN com.github.fommil.netlib.BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 0.05162
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 1.08373 (rel: 0.0128) 0.510379
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 1.03639 (rel: 0.0437) 0.629651
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 1.01159 (rel: 0.0239) 2.04982
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.932457 (rel: 0.0782) 0.143609
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.932002 (rel: 0.000488) 0.0922352
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.931489 (rel: 0.000550) 0.201781
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.930987 (rel: 0.000539) 0.0860203
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.930479 (rel: 0.000546) 0.129507
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 2.100
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.928879 (rel: 0.00172) 0.0869740
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.920443 (rel: 0.00908) 0.174021
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.918431 (rel: 0.00219) 0.163909
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.918087 (rel: 0.000374) 0.280865
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.915610 (rel: 0.00270) 0.213706
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:45 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.914730 (rel: 0.000961) 0.0766228
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.914215 (rel: 0.000563) 0.177587
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.913581 (rel: 0.000693) 0.0956579
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.912924 (rel: 0.000719) 0.172346
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.911998 (rel: 0.00101) 0.0677084
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.911169 (rel: 0.000908) 0.178181
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:46 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.910422 (rel: 0.000820) 0.308081
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.907704 (rel: 0.00299) 0.160260
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.907479 (rel: 0.000249) 0.170552
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.907094 (rel: 0.000424) 0.226940
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.906248 (rel: 0.000933) 0.105395
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.905891 (rel: 0.000394) 0.131706
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.905657 (rel: 0.000258) 0.0453310
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.905477 (rel: 0.000199) 0.103925
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.905238 (rel: 0.000264) 0.0590992
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.904951 (rel: 0.000317) 0.0997248
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:47 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.904498 (rel: 0.000500) 0.0291204
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.904293 (rel: 0.000226) 0.133448
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.903692 (rel: 0.000665) 0.0574230
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.903265 (rel: 0.000473) 0.0789657
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.903012 (rel: 0.000279) 0.0265838
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.902744 (rel: 0.000297) 0.0682493
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.902598 (rel: 0.000163) 0.0258127
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.902359 (rel: 0.000264) 0.0672191
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.902252 (rel: 0.000119) 0.0195782
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.902099 (rel: 0.000169) 0.0522686
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Step Size: 1.000
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.901981 (rel: 0.000131) 0.0260222
+21/03/14 14:48:48 INFO breeze.optimize.OWLQN: Converged because max iterations reached
+21/03/14 14:48:49 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:49 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:49 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHFXUm9kcHBicFlVcBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Logistic regression Model with scaler
+21/03/14 14:48:50 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:50 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:50 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDFV3VThDX050RFFUchoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Training accuracy =  0.8503937007874016
+21/03/14 14:48:50 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:50 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:51 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDDZkWkhXUFMySEdXdxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Test accuracy =  0.9130434782608695
+21/03/14 14:48:51 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:51 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:52 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEFkRGNPb09YOFhjORoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:52 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:52 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:52 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEhKcmJSS3Y1T3JvZBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:53 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:53 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:53 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHIwVGdnLWJFQTlsOBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Decision Tree Classifier Model with scaler
+21/03/14 14:48:56 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:56 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:56 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDE9RekpVWUtYUllLQhoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Training accuracy =  1.0
+21/03/14 14:48:56 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:56 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:57 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHJYVk9TeXRQNldjcxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Test accuracy =  1.0
+21/03/14 14:48:57 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:57 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:58 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDC12enZPZWgtMlVfMRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:58 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:58 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:58 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEJ0bTJHT1FuUVB3axoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:48:59 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:48:59 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:48:59 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEZFbktrZm14WEE2URoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:00 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:00 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:00 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDENwN09JX2JpdXo3MRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.366
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.420900 (rel: 0.324) 2.18920
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0643402 (rel: 0.847) 0.327205
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0412172 (rel: 0.359) 0.148545
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0227735 (rel: 0.447) 0.0344996
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0138375 (rel: 0.392) 0.0252469
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.00819910 (rel: 0.407) 0.0299862
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:01 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.00489459 (rel: 0.403) 0.0262668
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.00288111 (rel: 0.411) 0.0195567
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.00167785 (rel: 0.418) 0.0132192
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.000961660 (rel: 0.427) 0.00831123
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.000540379 (rel: 0.438) 0.00492941
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.000287195 (rel: 0.469) 0.00266402
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.000148662 (rel: 0.482) 0.00138554
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 7.63875e-05 (rel: 0.486) 0.000711430
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 3.90107e-05 (rel: 0.489) 0.000361961
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.98648e-05 (rel: 0.491) 0.000183269
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.00926e-05 (rel: 0.492) 9.24575e-05
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 5.11995e-06 (rel: 0.493) 4.65287e-05
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 2.59407e-06 (rel: 0.493) 2.33709e-05
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.31289e-06 (rel: 0.494) 1.17228e-05
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 6.63797e-07 (rel: 0.494) 5.87461e-06
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 3.35295e-07 (rel: 0.495) 2.94174e-06
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.69212e-07 (rel: 0.267) 1.47226e-06
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 8.53248e-08 (rel: 0.135) 7.36513e-07
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:02 INFO breeze.optimize.LBFGS: Val and Grad Norm: 4.29925e-08 (rel: 0.0679) 3.68343e-07
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 2.16477e-08 (rel: 0.0343) 1.84183e-07
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.08933e-08 (rel: 0.0173) 9.20904e-08
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 5.47858e-09 (rel: 0.00869) 4.60449e-08
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 2.75395e-09 (rel: 0.00437) 2.30237e-08
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 1.38372e-09 (rel: 0.00220) 1.15137e-08
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Val and Grad Norm: 6.94970e-10 (rel: 0.00111) 5.75852e-09
+21/03/14 14:49:03 INFO breeze.optimize.LBFGS: Converged because gradient converged
+21/03/14 14:49:03 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:03 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:03 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDGFVaE5ULXpaSW9yQhoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:03 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:03 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDE5VUmZpb1FodVVwMxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDER6ZktZX1JfLVoyZRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:04 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:05 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHN6UTl0OWhJUXB1axoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:05 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.4032309544136446 fval: 0.6389275132926177 rhs: 0.6400884169023674 cdd: 0.05140369526996518
+21/03/14 14:49:05 INFO breeze.optimize.LBFGS: Step Size: 0.4032
+21/03/14 14:49:05 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.638928 (rel: 0.00182) 0.876489
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.623964 (rel: 0.0234) 0.431545
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.608046 (rel: 0.0255) 0.163933
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.594369 (rel: 0.0225) 0.304361
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.585647 (rel: 0.0147) 0.147529
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.582814 (rel: 0.00484) 0.0684121
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.580165 (rel: 0.00455) 0.118163
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.576575 (rel: 0.00619) 0.198264
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.568556 (rel: 0.0139) 0.291322
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.555410 (rel: 0.0231) 0.325505
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.535589 (rel: 0.0357) 0.186524
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.527298 (rel: 0.0155) 0.0227464
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.527055 (rel: 0.000462) 0.0122886
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.526969 (rel: 0.000163) 0.0639482
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.526857 (rel: 0.000212) 0.0214867
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.526740 (rel: 0.000221) 0.0138297
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.526196 (rel: 0.00103) 0.0787192
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.525032 (rel: 0.00221) 0.168983
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.522029 (rel: 0.00572) 0.305161
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.515761 (rel: 0.0120) 0.449265
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:06 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.505343 (rel: 0.0202) 0.508626
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.495635 (rel: 0.0192) 0.378791
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.491908 (rel: 0.00752) 0.137866
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.491094 (rel: 0.00165) 0.0302302
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490944 (rel: 0.000306) 0.0120102
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490932 (rel: 2.39e-05) 0.00889189
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490896 (rel: 7.44e-05) 0.00761831
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490835 (rel: 0.000124) 0.0166449
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490744 (rel: 0.000184) 0.0242872
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490615 (rel: 0.000264) 0.0265817
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.490320 (rel: 0.000600) 0.0186994
+21/03/14 14:49:07 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.40974460235440247 fval: 0.4895735664595683 rhs: 0.49032010500423834 cdd: 1.912300443662751E-6
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 0.4097
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.489574 (rel: 0.00152) 0.0839493
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.488439 (rel: 0.00232) 0.0730296
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483547 (rel: 0.0100) 0.0171627
+21/03/14 14:49:07 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.42218707149414914 fval: 0.4835341679370487 rhs: 0.48354736946847887 cdd: 1.949521448340783E-10
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 0.4222
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483534 (rel: 2.73e-05) 0.00218102
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483526 (rel: 1.68e-05) 0.00103260
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483526 (rel: 3.45e-07) 0.000398175
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483526 (rel: 6.23e-08) 9.97109e-07
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.483526 (rel: 9.97e-13) 2.56115e-08
+21/03/14 14:49:07 INFO breeze.optimize.LBFGS: Converged because gradient converged
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHByMnpvS05Pdng5dxoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDE0tTkxXU2tINXZ3eBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:08 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:09 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHFFbW5Wc2s0Q1NscRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:09 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:09 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:09 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDE9WOTQ4cktxdzI2OBoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:10 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.17202533782342244 fval: 0.6216962612057774 rhs: 0.6452197431289972 cdd: 0.07079440528996653
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 0.1720
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.621696 (rel: 0.0365) 1.11401
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.587997 (rel: 0.0542) 0.827820
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.413964 (rel: 0.296) 0.201829
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.354896 (rel: 0.143) 0.295587
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.298674 (rel: 0.158) 0.219959
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.228970 (rel: 0.233) 0.0620609
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.165942 (rel: 0.275) 0.0792620
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.131859 (rel: 0.205) 0.137238
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.115522 (rel: 0.124) 0.135375
+21/03/14 14:49:10 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.10216128676308711 fval: 0.11014589107503334 rhs: 0.11552126067638505 cdd: -0.00526015173821423
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Step Size: 0.1022
+21/03/14 14:49:10 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.110146 (rel: 0.0465) 0.0884107
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0990664 (rel: 0.101) 0.0490703
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0916388 (rel: 0.0750) 0.0438113
+21/03/14 14:49:11 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.5260666868813075 fval: 0.1694506977774448 rhs: 0.09163625324424297 cdd: 0.4683884905263047
+21/03/14 14:49:11 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.11344675191157283 fval: 0.08908123891207981 rhs: 0.09163825641632409 cdd: 0.006814691487878992
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 0.1134
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0890812 (rel: 0.0279) 0.0156053
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0857284 (rel: 0.0376) 0.0126220
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0780474 (rel: 0.0896) 0.00816122
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0632787 (rel: 0.189) 0.0127581
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0598875 (rel: 0.0536) 0.00162347
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0582776 (rel: 0.0269) 0.00853443
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0575529 (rel: 0.0124) 0.00690312
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0567943 (rel: 0.0132) 0.00174644
+21/03/14 14:49:11 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.30500861534202917 fval: 0.05656181887866463 rhs: 0.05679425600504232 cdd: 4.764226209605718E-6
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 0.3050
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0565618 (rel: 0.00409) 0.0251583
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0555496 (rel: 0.0179) 0.00573913
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0544079 (rel: 0.0206) 0.00644099
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0522111 (rel: 0.0404) 0.0174680
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0494292 (rel: 0.0533) 0.0227050
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0484347 (rel: 0.0201) 0.0188021
+21/03/14 14:49:11 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.11055873077875478 fval: 0.04833227959353388 rhs: 0.048434640627338564 cdd: -3.860940785464784E-6
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Step Size: 0.1106
+21/03/14 14:49:11 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0483323 (rel: 0.00211) 0.0135054
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0480125 (rel: 0.00662) 0.00955512
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0473469 (rel: 0.0139) 0.00709690
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0471944 (rel: 0.00322) 0.00695079
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0469984 (rel: 0.00415) 0.00187671
+21/03/14 14:49:12 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.1 fval: 0.04709308549224937 rhs: 0.04699837725605624 cdd: 0.003241901187595486
+21/03/14 14:49:12 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.029355202643098918 fval: 0.046978716832850397 rhs: 0.046998386726349636 cdd: 4.5791870733388057E-7
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 0.02936
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0469787 (rel: 0.000419) 0.00521592
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468402 (rel: 0.00295) 0.000809977
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468315 (rel: 0.000187) 7.91571e-05
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468309 (rel: 1.24e-05) 2.48851e-05
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468309 (rel: 9.86e-08) 5.08227e-06
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468309 (rel: 2.37e-08) 7.72097e-07
+21/03/14 14:49:12 INFO breeze.optimize.StrongWolfeLineSearch: Line search t: 0.18645640173547728 fval: 0.046830870489436266 rhs: 0.04683087049201156 cdd: -6.946513313329873E-18
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 0.1865
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468309 (rel: 5.50e-11) 2.15920e-07
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Step Size: 1.000
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Val and Grad Norm: 0.0468309 (rel: 9.23e-11) 2.64749e-08
+21/03/14 14:49:12 INFO breeze.optimize.LBFGS: Converged because gradient converged
+21/03/14 14:49:12 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:12 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:13 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDHRkV0szUFh4Wk1qehoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+21/03/14 14:49:13 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:13 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:13 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDE9malFJVmtXZHd6YRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+One-versus-Rest classifier Model with scaler
+21/03/14 14:49:15 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:15 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:15 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDEhkXzNNQkd6MkZkThoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Training accuracy =  0.9763779527559056
+21/03/14 14:49:19 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lab-5-307106.iris_dataset.iris_input, parameters sent from Spark: requiredColumns=[sepal_length,sepal_width,petal_length,petal_width,class], filters=[]
+21/03/14 14:49:19 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lab-5-307106.iris_dataset.iris_input columns=[sepal_length, sepal_width, petal_length, petal_width, class], filter=''
+21/03/14 14:49:19 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Created read session for table 'lab-5-307106.iris_dataset.iris_input': projects/lab-5-307106/locations/us/sessions/CAISDG5JRF83b0dDR05nQRoCaXIaAml3GgJuYRoCb3MaAmpxGgJqchoCb3caAmpjGgJqcxoCamQaAm9q
+Test accuracy =  1.0
+21/03/14 14:49:20 INFO org.sparkproject.jetty.server.AbstractConnector: Stopped Spark@529f0fb3{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+Job output is complete

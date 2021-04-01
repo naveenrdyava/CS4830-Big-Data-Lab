@@ -1,0 +1,7 @@
+SELECT
+COUNT(*)
+FROM
+`lab-5-307106.iris_dataset.iris_input`
+WHERE sepal_width > 3
+AND petal_length < 2
+AND class = 'Iris-virginica'
